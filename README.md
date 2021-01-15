@@ -33,7 +33,7 @@ Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.co
 
 </details>  
 <details>
-  <summary>Steps to self Host!! </summary>
+  <summary>Steps to self Host !! </summary>
 
   ## Setting up the bot (Read this before trying to use!):
 Please make sure to use python3.6, as I cannot guarantee everything will work as expected on older Python versions!
