@@ -210,7 +210,7 @@ def start(update: Update, context: CallbackContext):
                      [
                         InlineKeyboardButton(
                             text=" ❓ Help ",
-                            url="https://t.me/JE_NarutoRobot?start=help"),
+                            url="https://t.me/LizaSnow_bot?start=help"),
                          InlineKeyboardButton(
                             text=" 👨‍💻 Developer ",
                              url="https://t.me/ImJanindu")        
@@ -218,8 +218,8 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                         InlineKeyboardButton(
-                             text=" ❤️ Source Code ",
-                             url="https://t.me/Infinity_BOTs")
+                             text=" ❤️ Support Channel ",
+                             url="https://t.me/InfJE")
                     
                     ]]))
     else:
