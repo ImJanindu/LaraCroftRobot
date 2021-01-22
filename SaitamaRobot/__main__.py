@@ -77,12 +77,12 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/c77d80b7e21e3ab7c4a24.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/4e32af827e9e9b4855df6.jpg"
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
 Senku is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+There are two ways of supporting him: [Owner](t.me/imjanindu)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
