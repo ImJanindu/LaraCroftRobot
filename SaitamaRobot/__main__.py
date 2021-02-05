@@ -69,9 +69,7 @@ the things I can help you with.
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
-
 {}
-And the following:
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !\n")
@@ -79,7 +77,7 @@ And the following:
 SAITAMA_IMG = "https://telegra.ph/file/5ddbf92813cb788bbc04e.jpg"
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
-You can donate to the original writer of the Base code [Janindu](t.me/imjanindu)"""
+You can donate to the original writer of the base code of the bot - [Janindu](t.me/imjanindu)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -201,7 +199,7 @@ def start(update: Update, context: CallbackContext):
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                          InlineKeyboardButton(
-                             text=" ✅ Updates ",
+                             text=" ✅ My Updates ",
                              url="https://t.me/Infinity_BOTs")
                      ],
                      [
@@ -215,8 +213,14 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                         InlineKeyboardButton(
-                             text=" ❤️ Support Channel ",
+                             text=" 📢 Support Channel ",
                              url="https://t.me/InfJE")
+                    
+                    ],
+                    [
+                        InlineKeyboardButton(
+                             text=" 👥 Support Group ",
+                             url="https://t.me/InfinityJE")
                     
                     ]]))
     else:
