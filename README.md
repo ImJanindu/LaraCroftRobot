@@ -1,4 +1,4 @@
-![Lara Croft](https://images8.alphacoders.com/104/1046436.jpg)
+![Lara Croft](https://telegra.ph/file/5ddbf92813cb788bbc04e.jpg)
 # Lara Croft Robot
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Saitama suitable for Anime and Manga group chats. 
