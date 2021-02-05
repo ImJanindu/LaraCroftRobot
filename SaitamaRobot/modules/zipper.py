@@ -7,7 +7,7 @@ from telethon.tl import functions
 
 from SaitamaRobot import TEMP_DOWNLOAD_DIRECTORY
 from SaitamaRobot import telethn as client
-from SaitamaRobot.events import register
+from SaitamaRobot.event import register
 
 
 async def is_register_admin(chat, user):
