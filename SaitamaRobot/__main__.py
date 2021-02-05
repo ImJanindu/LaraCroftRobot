@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! \n
-I am a group manager bot created by [my master](t.me/imjanindu) based on Project Liza written by [Janindu](https://visi.tk/imjanindu) \n
+I am a group manager bot created by [my master](t.me/imjanindu) based on Project Lara written by [Janindu](https://visi.tk/imjanindu) \n
 Want to chat with me, send /addchat in a group and reply to my message to start chatting. \n
 You can find my list of available commands with /help.
 """
