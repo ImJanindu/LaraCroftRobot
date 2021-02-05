@@ -270,7 +270,6 @@ __help__ = """
  • `/sanitize`*:* always use this before /pat or any contact
  • `/pat`*:* pats a user, or get patted
  • `/8ball`*:* predicts using 8ball method
- • `/google` `<text query>` *:* search google queries
  • `/meme`*:* sends a random meme form reddit `r/animemes`
 """
 
