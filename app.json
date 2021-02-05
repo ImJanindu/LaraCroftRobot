@@ -1,6 +1,6 @@
 {
-      "name": "Naruto Robot",
-      "description": "An Anime themed Telegram group management bot.",
+      "name": "Lara Croft Robot",
+      "description": "A Powerfull Telegram group management bot.",
       "keywords": [
          "telegram",
          "anime",
@@ -8,8 +8,8 @@
          "manager",
          "Senku"
       ],   
-   "repository": "https://github.com/ImJanindu/NarutoRobot",
-   "logo": "https://telegra.ph/file/c77d80b7e21e3ab7c4a24.jpg",
+   "repository": "https://github.com/ImJanindu/LaraCroftRobot",
+   "logo": "https://telegra.ph/file/5ddbf92813cb788bbc04e.jpg",
    "addons": [
     {
          "options": {
@@ -59,7 +59,7 @@
          "value": ""
       },
       "SUPPORT_CHAT": {
-         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
+         "description": "Your Telegram support group chat username.",
          "required": true,
          "value": ""
       },
@@ -103,7 +103,7 @@
          "value": ""
       },
       "DEMONS": {
-         "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
+         "description": "A space separated list of user IDs who you wanna assign as support users (gban perms only).",
          "required": false,
          "value": ""
       },
