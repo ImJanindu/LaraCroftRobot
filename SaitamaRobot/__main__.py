@@ -52,8 +52,8 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! \n
-I am a group manager bot created by [my master](t.me/imjanindu) based on Project Liza written by [ImJanindu](https://visi.tk/imjanindu) \n
-Want to Chat with me, send /addchat in a group and reply to my message to start chatting. \n
+I am a group manager bot created by [my master](t.me/imjanindu) based on Project Liza written by [Janindu](https://visi.tk/imjanindu) \n
+Want to chat with me, send /addchat in a group and reply to my message to start chatting. \n
 You can find my list of available commands with /help.
 """
 
@@ -63,13 +63,12 @@ I help admins to manage their groups! Have a look at the following for an idea o
 the things I can help you with.
 
 *Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-
+✪ /start: Starts me! You've probably already used this.
+✪ /help: Click this, I'll let you know about myself!
+✪ /donate: You can support my creater using this command.
+✪ /settings: 
+   ◔ in PM: will send you your settings for all supported modules.
+   ◔ in a Group: will redirect you to pm, with all that chat's settings.
 
 {}
 And the following:
@@ -77,12 +76,10 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/c1fa72348e7f68dfa0cfd.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/5ddbf92813cb788bbc04e.jpg"
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
-Senku is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him: [Owner](t.me/imjanindu)"""
+You can donate to the original writer of the Base code [Janindu](t.me/imjanindu)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
