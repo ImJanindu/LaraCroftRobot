@@ -58,9 +58,8 @@ You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I help admins to manage their groups! Have a look at the following for an idea of some of \
-the things I can help you with.
+Hey! My name is {}. I am a group management bot, here to help you get around and keep the order in your groups!
+I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
 
 *Main* commands available:
 ✪ /start: Starts me! You've probably already used this.
@@ -69,6 +68,8 @@ the things I can help you with.
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
+
+If you have any bugs or questions on how to use me head to @Infinity_BOTs.
 {}
 """.format(
     dispatcher.bot.first_name, ""
