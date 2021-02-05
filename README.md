@@ -5,7 +5,7 @@ A modular Telegram Python bot running on python3 with a sqlalchemy database and 
 
 Can be found on telegram as [Lara Robot](https://t.me/TheLaraCroftRobot).
 
-The Support group can be reached out to at [Naruto Support](https://t.me/Infinity_BOTs), where you can ask for help about [Naruto Robot](https://t.me/TheLaraCroftRobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Lara Support](https://t.me/Infinity_BOTs), where you can ask for help about [Lara Robot](https://t.me/TheLaraCroftRobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 News channel as at [Lara Robot Updates](https://t.me/Infinity_BOTs) 
 
