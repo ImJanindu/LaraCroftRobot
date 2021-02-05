@@ -212,14 +212,14 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                         InlineKeyboardButton(
-                             text=" 📢 Support Channel ",
-                             url="https://t.me/InfJE")
+                             text=" 👥 Support Group ",
+                             url="https://t.me/InfinityJE")
                     
                     ],
                     [
                         InlineKeyboardButton(
-                             text=" 👥 Support Group ",
-                             url="https://t.me/InfinityJE")
+                             text=" 📢 Support Channel ",
+                             url="https://t.me/InfJE")
                     
                     ]]))
     else:
