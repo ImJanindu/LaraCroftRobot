@@ -34,8 +34,8 @@ def tts(update: Update, context: CallbackContext):
     update.message.chat.send_action(ChatAction.RECORD_AUDIO)
     lang="ml"
     tts = gTTS(reply, lang)
-    tts.save("k.mp3")
-    with open("k.mp3", "rb") as f:
+    tts.save("voice.mp3")
+    with open("voice.mp3", "rb") as f:
         linelist = list(f)
         linecount = len(linelist)
     if linecount == 1:
@@ -48,12 +48,11 @@ def tts(update: Update, context: CallbackContext):
 
 __help__ = """
  • `/tts <text>`*:* convert text to speech
- • `/stt <text>`*:* convert speech to text
 
  """
 TTS_HANDLER = DisableAbleCommandHandler("tts", tts, pass_args=True)
 dispatcher.add_handler(TTS_HANDLER)
 
-__mod_name__ = "TTS - STT"
+__mod_name__ = "Text To Speech"
 __command_list__ = ["tts"]
 __handlers__ = [TTS_HANDLER]
