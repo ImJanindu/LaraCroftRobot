@@ -68,8 +68,6 @@ Hey! My name is {}. I am a group management bot, here to help you get around and
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
 
-If you have any bugs or questions on how to use me, head to @Infinity_BOTs.
-
 {}
 """.format(
     dispatcher.bot.first_name, ""
