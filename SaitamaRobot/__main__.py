@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
                      [
                         InlineKeyboardButton(
                             text=" ❓ Help ",
-                            url="https://t.me/LizaSnow_bot?start=help"),
+                            url="https://t.me/TheLaraRobot?start=help"),
                          InlineKeyboardButton(
                             text=" 👨‍💻 Developer ",
                              url="https://t.me/ImJanindu")        
