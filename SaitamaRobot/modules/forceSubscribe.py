@@ -205,4 +205,4 @@ Note: /FSub is an alias of /ForceSubscribe
 💭 Only on Sinhala 🇱🇰 yet
  
 """
-__mod_name__ = "📢 Force Subscribe 💭"
+__mod_name__ = "Force Subscribe"
