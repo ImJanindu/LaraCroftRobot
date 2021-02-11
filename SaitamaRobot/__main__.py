@@ -198,7 +198,7 @@ def start(update: Update, context: CallbackContext):
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                          InlineKeyboardButton(
-                             text=" 🔄 My Updates ",
+                             text=" 📌 My Updates ",
                              url="https://t.me/Infinity_BOTs")
                      ],
                      [
@@ -206,7 +206,7 @@ def start(update: Update, context: CallbackContext):
                             text=" ❓ Help ",
                             url="https://t.me/TheLaraCroftRobot?start=help"),
                          InlineKeyboardButton(
-                            text=" ✅ Developer ",
+                            text=" 🐍 Developer ",
                              url="https://t.me/ImJanindu")        
                        
                      ],
@@ -218,7 +218,7 @@ def start(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                             text=" 📢 Support Channel ",
+                             text=" 🇱🇰 Support Channel ",
                              url="https://t.me/InfJE")
                     
                     ]]))
