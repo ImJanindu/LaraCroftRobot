@@ -1,0 +1,21 @@
+name: Sed-replacer
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "SaitamaRobot"
+          replace: "LaraCroftRobot"
+      - name: Pull All Updates
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Welcome To Lara Croft Robot'
+          commit_options: '--no-verify'
+          repository: .
+          commit_user_name: ImJanindu
+          commit_user_email: janindumalshan259@gmail.com
+          commit_author: ImJanindu <janindumalshan259@gmail.com>
