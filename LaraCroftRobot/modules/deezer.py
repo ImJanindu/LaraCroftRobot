@@ -2,7 +2,7 @@
 import os
 
 import requests
-from pyrogram.types import Message, filters
+from pyrogram import Message, filters
 
 from LaraCroftRobot import pbot
 
