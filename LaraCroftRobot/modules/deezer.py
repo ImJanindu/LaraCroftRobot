@@ -5,10 +5,10 @@ import requests
 from pyrogram.types import Message
 
 from LaraCroftRobot import pbot
-from LaraCroftRobot.utils import cust_filter
+from pyrogram.types import filters
 
 
-@pbot.on_message(cust_filter.command(commands=("deezer")))
+@pbot.on_message(filters.command("deezer"))
 async def song(_, message: Message):
     if len(message.command) < 2:
         await message.reply_text("Please send the song name with `/song` command.")
