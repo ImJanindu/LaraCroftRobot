@@ -3,8 +3,8 @@ import time
 from datetime import datetime
 from io import BytesIO
 
-import SaitamaRobot.modules.sql.global_bans_sql as sql
-from SaitamaRobot import (
+import LaraCroftRobot.modules.sql.global_bans_sql as sql
+from LaraCroftRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -18,17 +18,17 @@ from SaitamaRobot import (
     dispatcher,
     sw,
 )
-from SaitamaRobot.modules.helper_funcs.chat_status import (
+from LaraCroftRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from SaitamaRobot.modules.helper_funcs.extraction import (
+from LaraCroftRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SaitamaRobot.modules.helper_funcs.misc import send_to_list
-from SaitamaRobot.modules.sql.users_sql import get_user_com_chats
+from LaraCroftRobot.modules.helper_funcs.misc import send_to_list
+from LaraCroftRobot.modules.sql.users_sql import get_user_com_chats
 from telegram import ParseMode, Update
 from telegram.error import BadRequest, TelegramError, Unauthorized
 from telegram.ext import (

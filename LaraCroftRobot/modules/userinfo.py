@@ -4,8 +4,8 @@ import re
 import subprocess
 
 import requests
-import SaitamaRobot.modules.sql.userinfo_sql as sql
-from SaitamaRobot import (
+import LaraCroftRobot.modules.sql.userinfo_sql as sql
+from LaraCroftRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -16,14 +16,14 @@ from SaitamaRobot import (
     dispatcher,
     sw,
 )
-from SaitamaRobot import telethn as SaitamaTelethonClient
-from SaitamaRobot.__main__ import STATS, TOKEN, USER_INFO
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import sudo_plus
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user
-from SaitamaRobot.modules.sql.afk_sql import check_afk_status, is_afk
-from SaitamaRobot.modules.sql.global_bans_sql import is_user_gbanned
-from SaitamaRobot.modules.sql.users_sql import get_user_num_chats
+from LaraCroftRobot import telethn as SaitamaTelethonClient
+from LaraCroftRobot.__main__ import STATS, TOKEN, USER_INFO
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot.modules.helper_funcs.chat_status import sudo_plus
+from LaraCroftRobot.modules.helper_funcs.extraction import extract_user
+from LaraCroftRobot.modules.sql.afk_sql import check_afk_status, is_afk
+from LaraCroftRobot.modules.sql.global_bans_sql import is_user_gbanned
+from LaraCroftRobot.modules.sql.users_sql import get_user_num_chats
 from telegram import MAX_MESSAGE_LENGTH, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler

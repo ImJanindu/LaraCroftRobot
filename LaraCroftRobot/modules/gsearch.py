@@ -1,7 +1,7 @@
 import html2text
 import requests
-from SaitamaRobot import telethn
-from SaitamaRobot.event import register
+from LaraCroftRobot import telethn
+from LaraCroftRobot.event import register
 from telethon.tl import functions, types
 
 

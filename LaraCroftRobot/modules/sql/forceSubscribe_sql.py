@@ -14,7 +14,7 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-from SaitamaRobot.modules.sql import BASE, SESSION
+from LaraCroftRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Numeric, String
 
 

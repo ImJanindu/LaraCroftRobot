@@ -2,9 +2,9 @@ import os
 import time
 import zipfile
 
-from SaitamaRobot import TEMP_DOWNLOAD_DIRECTORY
-from SaitamaRobot import telethn as client
-from SaitamaRobot.event import register
+from LaraCroftRobot import TEMP_DOWNLOAD_DIRECTORY
+from LaraCroftRobot import telethn as client
+from LaraCroftRobot.event import register
 from telethon import types
 from telethon.tl import functions
 

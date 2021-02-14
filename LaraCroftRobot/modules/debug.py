@@ -1,8 +1,8 @@
 import datetime
 import os
 
-from SaitamaRobot import dispatcher, telethn
-from SaitamaRobot.modules.helper_funcs.chat_status import dev_plus
+from LaraCroftRobot import dispatcher, telethn
+from LaraCroftRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telethon import events

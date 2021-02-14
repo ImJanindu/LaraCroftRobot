@@ -4,8 +4,8 @@ import json
 import os
 import time
 
-from SaitamaRobot.event import register
-from SaitamaRobot.utils import progress
+from LaraCroftRobot.event import register
+from LaraCroftRobot.utils import progress
 from telethon.tl.types import DocumentAttributeAudio
 from youtube_dl import YoutubeDL
 from youtube_dl.utils import (

@@ -1,4 +1,4 @@
-from SaitamaRobot import telethn
+from LaraCroftRobot import telethn
 from telethon import events
 
 

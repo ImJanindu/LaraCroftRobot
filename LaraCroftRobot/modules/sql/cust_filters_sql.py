@@ -1,7 +1,7 @@
 import threading
 
-from SaitamaRobot.modules.helper_funcs.msg_types import Types
-from SaitamaRobot.modules.sql import BASE, SESSION
+from LaraCroftRobot.modules.helper_funcs.msg_types import Types
+from LaraCroftRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 
 

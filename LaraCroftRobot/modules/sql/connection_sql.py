@@ -2,7 +2,7 @@ import threading
 import time
 from typing import Union
 
-from SaitamaRobot.modules.sql import BASE, SESSION
+from LaraCroftRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
 

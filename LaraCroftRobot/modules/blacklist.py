@@ -1,18 +1,18 @@
 import html
 import re
 
-import SaitamaRobot.modules.sql.blacklist_sql as sql
-from SaitamaRobot import LOGGER, dispatcher
-from SaitamaRobot.modules.connection import connected
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import send_message, typing_action
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SaitamaRobot.modules.helper_funcs.extraction import extract_text
-from SaitamaRobot.modules.helper_funcs.misc import split_message
-from SaitamaRobot.modules.helper_funcs.string_handling import extract_time
-from SaitamaRobot.modules.log_channel import loggable
-from SaitamaRobot.modules.sql.approve_sql import is_approved
-from SaitamaRobot.modules.warns import warn
+import LaraCroftRobot.modules.sql.blacklist_sql as sql
+from LaraCroftRobot import LOGGER, dispatcher
+from LaraCroftRobot.modules.connection import connected
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot.modules.helper_funcs.alternate import send_message, typing_action
+from LaraCroftRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from LaraCroftRobot.modules.helper_funcs.extraction import extract_text
+from LaraCroftRobot.modules.helper_funcs.misc import split_message
+from LaraCroftRobot.modules.helper_funcs.string_handling import extract_time
+from LaraCroftRobot.modules.log_channel import loggable
+from LaraCroftRobot.modules.sql.approve_sql import is_approved
+from LaraCroftRobot.modules.warns import warn
 from telegram import ChatPermissions, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, MessageHandler, run_async

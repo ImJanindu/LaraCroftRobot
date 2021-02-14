@@ -1,13 +1,13 @@
 import html
 import random
 
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import (
+from LaraCroftRobot import dispatcher
+from LaraCroftRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from SaitamaRobot.modules.sql import afk_sql as sql
-from SaitamaRobot.modules.users import get_user_id
+from LaraCroftRobot.modules.sql import afk_sql as sql
+from LaraCroftRobot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async

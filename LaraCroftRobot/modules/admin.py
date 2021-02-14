@@ -1,9 +1,9 @@
 import html
 
-from SaitamaRobot import DRAGONS, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import send_message
-from SaitamaRobot.modules.helper_funcs.chat_status import (
+from LaraCroftRobot import DRAGONS, dispatcher
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot.modules.helper_funcs.alternate import send_message
+from LaraCroftRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
     bot_admin,
     can_pin,
@@ -11,11 +11,11 @@ from SaitamaRobot.modules.helper_funcs.chat_status import (
     connection_status,
     user_admin,
 )
-from SaitamaRobot.modules.helper_funcs.extraction import (
+from LaraCroftRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SaitamaRobot.modules.log_channel import loggable
+from LaraCroftRobot.modules.log_channel import loggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async

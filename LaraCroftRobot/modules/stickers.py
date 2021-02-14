@@ -6,8 +6,8 @@ from html import escape
 import requests
 from bs4 import BeautifulSoup as bs
 from PIL import Image
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot import dispatcher
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,

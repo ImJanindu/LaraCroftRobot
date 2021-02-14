@@ -1,7 +1,7 @@
 import time
 
-from SaitamaRobot import telethn
-from SaitamaRobot.modules.helper_funcs.telethn.chatstatus import (
+from LaraCroftRobot import telethn
+from LaraCroftRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )

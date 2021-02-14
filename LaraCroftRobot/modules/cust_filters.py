@@ -3,23 +3,23 @@ import re
 from html import escape
 
 import telegram
-from SaitamaRobot import DRAGONS, LOGGER, dispatcher
-from SaitamaRobot.modules.connection import connected
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import send_message, typing_action
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
-from SaitamaRobot.modules.helper_funcs.extraction import extract_text
-from SaitamaRobot.modules.helper_funcs.filters import CustomFilters
-from SaitamaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from SaitamaRobot.modules.helper_funcs.misc import build_keyboard_parser
-from SaitamaRobot.modules.helper_funcs.msg_types import get_filter_type
-from SaitamaRobot.modules.helper_funcs.string_handling import (
+from LaraCroftRobot import DRAGONS, LOGGER, dispatcher
+from LaraCroftRobot.modules.connection import connected
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot.modules.helper_funcs.alternate import send_message, typing_action
+from LaraCroftRobot.modules.helper_funcs.chat_status import user_admin
+from LaraCroftRobot.modules.helper_funcs.extraction import extract_text
+from LaraCroftRobot.modules.helper_funcs.filters import CustomFilters
+from LaraCroftRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from LaraCroftRobot.modules.helper_funcs.misc import build_keyboard_parser
+from LaraCroftRobot.modules.helper_funcs.msg_types import get_filter_type
+from LaraCroftRobot.modules.helper_funcs.string_handling import (
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
     split_quotes,
 )
-from SaitamaRobot.modules.sql import cust_filters_sql as sql
+from LaraCroftRobot.modules.sql import cust_filters_sql as sql
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import (

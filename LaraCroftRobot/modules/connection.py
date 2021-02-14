@@ -1,10 +1,10 @@
 import re
 import time
 
-import SaitamaRobot.modules.sql.connection_sql as sql
-from SaitamaRobot import DEV_USERS, DRAGONS, dispatcher
-from SaitamaRobot.modules.helper_funcs import chat_status
-from SaitamaRobot.modules.helper_funcs.alternate import send_message, typing_action
+import LaraCroftRobot.modules.sql.connection_sql as sql
+from LaraCroftRobot import DEV_USERS, DRAGONS, dispatcher
+from LaraCroftRobot.modules.helper_funcs import chat_status
+from LaraCroftRobot.modules.helper_funcs.alternate import send_message, typing_action
 from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackQueryHandler, CommandHandler, run_async

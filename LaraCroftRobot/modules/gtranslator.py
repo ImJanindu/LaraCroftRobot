@@ -1,7 +1,7 @@
 from emoji import UNICODE_EMOJI
 from google_trans_new import LANGUAGES, google_translator
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot import dispatcher
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 

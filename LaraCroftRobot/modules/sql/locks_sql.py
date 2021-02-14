@@ -1,7 +1,7 @@
 # New chat added -> setup permissions
 import threading
 
-from SaitamaRobot.modules.sql import BASE, SESSION
+from LaraCroftRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String
 
 

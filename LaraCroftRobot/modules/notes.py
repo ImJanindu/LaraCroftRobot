@@ -4,14 +4,14 @@ import re
 from io import BytesIO
 from typing import Optional
 
-import SaitamaRobot.modules.sql.notes_sql as sql
-from SaitamaRobot import DRAGONS, JOIN_LOGGER, LOGGER, SUPPORT_CHAT, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import connection_status, user_admin
-from SaitamaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from SaitamaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from SaitamaRobot.modules.helper_funcs.msg_types import get_note_type
-from SaitamaRobot.modules.helper_funcs.string_handling import (
+import LaraCroftRobot.modules.sql.notes_sql as sql
+from LaraCroftRobot import DRAGONS, JOIN_LOGGER, LOGGER, SUPPORT_CHAT, dispatcher
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot.modules.helper_funcs.chat_status import connection_status, user_admin
+from LaraCroftRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from LaraCroftRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from LaraCroftRobot.modules.helper_funcs.msg_types import get_note_type
+from LaraCroftRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (

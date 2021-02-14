@@ -1,11 +1,11 @@
 import html
 
-import SaitamaRobot.modules.sql.approve_sql as sql
-from SaitamaRobot import DRAGONS, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user
-from SaitamaRobot.modules.log_channel import loggable
+import LaraCroftRobot.modules.sql.approve_sql as sql
+from LaraCroftRobot import DRAGONS, dispatcher
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot.modules.helper_funcs.chat_status import user_admin
+from LaraCroftRobot.modules.helper_funcs.extraction import extract_user
+from LaraCroftRobot.modules.log_channel import loggable
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async

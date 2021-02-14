@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import SaitamaRobot.modules.sql.feds_sql as sql
-from SaitamaRobot import (
+import LaraCroftRobot.modules.sql.feds_sql as sql
+from LaraCroftRobot import (
     DRAGONS,
     EVENT_LOGS,
     LOGGER,
@@ -16,15 +16,15 @@ from SaitamaRobot import (
     WOLVES,
     dispatcher,
 )
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import send_message
-from SaitamaRobot.modules.helper_funcs.chat_status import is_user_admin
-from SaitamaRobot.modules.helper_funcs.extraction import (
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot.modules.helper_funcs.alternate import send_message
+from LaraCroftRobot.modules.helper_funcs.chat_status import is_user_admin
+from LaraCroftRobot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from SaitamaRobot.modules.helper_funcs.string_handling import markdown_parser
+from LaraCroftRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,

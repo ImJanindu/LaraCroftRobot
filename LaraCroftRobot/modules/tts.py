@@ -1,8 +1,8 @@
 from datetime import datetime
 
 from gtts import gTTS
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot import dispatcher
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ChatAction, Update
 from telegram.ext import CallbackContext, run_async
 

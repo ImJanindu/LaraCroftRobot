@@ -2,9 +2,9 @@ import time
 from typing import List
 
 import requests
-from SaitamaRobot import StartTime, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import sudo_plus
+from LaraCroftRobot import StartTime, dispatcher
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot.modules.helper_funcs.chat_status import sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 

@@ -2,19 +2,19 @@ import html
 import re
 from typing import Optional
 
-from SaitamaRobot import TIGERS, WOLVES, dispatcher
-from SaitamaRobot.modules.connection import connected
-from SaitamaRobot.modules.helper_funcs.alternate import send_message
-from SaitamaRobot.modules.helper_funcs.chat_status import (
+from LaraCroftRobot import TIGERS, WOLVES, dispatcher
+from LaraCroftRobot.modules.connection import connected
+from LaraCroftRobot.modules.helper_funcs.alternate import send_message
+from LaraCroftRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from SaitamaRobot.modules.helper_funcs.string_handling import extract_time
-from SaitamaRobot.modules.log_channel import loggable
-from SaitamaRobot.modules.sql import antiflood_sql as sql
-from SaitamaRobot.modules.sql.approve_sql import is_approved
+from LaraCroftRobot.modules.helper_funcs.string_handling import extract_time
+from LaraCroftRobot.modules.log_channel import loggable
+from LaraCroftRobot.modules.sql import antiflood_sql as sql
+from LaraCroftRobot.modules.sql.approve_sql import is_approved
 from telegram import Chat, ChatPermissions, Message, Update, User
 from telegram.error import BadRequest
 from telegram.ext import (

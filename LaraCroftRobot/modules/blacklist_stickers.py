@@ -1,16 +1,16 @@
 import html
 from typing import Optional
 
-import SaitamaRobot.modules.sql.blsticker_sql as sql
-from SaitamaRobot import LOGGER, dispatcher
-from SaitamaRobot.modules.connection import connected
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import send_message
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SaitamaRobot.modules.helper_funcs.misc import split_message
-from SaitamaRobot.modules.helper_funcs.string_handling import extract_time
-from SaitamaRobot.modules.log_channel import loggable
-from SaitamaRobot.modules.warns import warn
+import LaraCroftRobot.modules.sql.blsticker_sql as sql
+from LaraCroftRobot import LOGGER, dispatcher
+from LaraCroftRobot.modules.connection import connected
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot.modules.helper_funcs.alternate import send_message
+from LaraCroftRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from LaraCroftRobot.modules.helper_funcs.misc import split_message
+from LaraCroftRobot.modules.helper_funcs.string_handling import extract_time
+from LaraCroftRobot.modules.log_channel import loggable
+from LaraCroftRobot.modules.warns import warn
 from telegram import Chat, ChatPermissions, Message, ParseMode, Update, User
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler

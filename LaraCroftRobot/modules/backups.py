@@ -3,22 +3,22 @@ import os
 import time
 from io import BytesIO
 
-# from SaitamaRobot.modules.sql import warns_sql as warnssql
-import SaitamaRobot.modules.sql.blacklist_sql as blacklistsql
+# from LaraCroftRobot.modules.sql import warns_sql as warnssql
+import LaraCroftRobot.modules.sql.blacklist_sql as blacklistsql
 
-# from SaitamaRobot.modules.sql import cust_filters_sql as filtersql
-# import SaitamaRobot.modules.sql.welcome_sql as welcsql
-import SaitamaRobot.modules.sql.locks_sql as locksql
-import SaitamaRobot.modules.sql.notes_sql as sql
+# from LaraCroftRobot.modules.sql import cust_filters_sql as filtersql
+# import LaraCroftRobot.modules.sql.welcome_sql as welcsql
+import LaraCroftRobot.modules.sql.locks_sql as locksql
+import LaraCroftRobot.modules.sql.notes_sql as sql
 
-# from SaitamaRobot.modules.rules import get_rules
-import SaitamaRobot.modules.sql.rules_sql as rulessql
-from SaitamaRobot import JOIN_LOGGER, LOGGER, OWNER_ID, dispatcher
-from SaitamaRobot.__main__ import DATA_IMPORT
-from SaitamaRobot.modules.connection import connected
-from SaitamaRobot.modules.helper_funcs.alternate import typing_action
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
-from SaitamaRobot.modules.sql import disable_sql as disabledsql
+# from LaraCroftRobot.modules.rules import get_rules
+import LaraCroftRobot.modules.sql.rules_sql as rulessql
+from LaraCroftRobot import JOIN_LOGGER, LOGGER, OWNER_ID, dispatcher
+from LaraCroftRobot.__main__ import DATA_IMPORT
+from LaraCroftRobot.modules.connection import connected
+from LaraCroftRobot.modules.helper_funcs.alternate import typing_action
+from LaraCroftRobot.modules.helper_funcs.chat_status import user_admin
+from LaraCroftRobot.modules.sql import disable_sql as disabledsql
 from telegram import Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async

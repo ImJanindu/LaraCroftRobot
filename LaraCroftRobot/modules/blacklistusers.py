@@ -1,8 +1,8 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
 
-import SaitamaRobot.modules.sql.blacklistusers_sql as sql
-from SaitamaRobot import (
+import LaraCroftRobot.modules.sql.blacklistusers_sql as sql
+from LaraCroftRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -11,12 +11,12 @@ from SaitamaRobot import (
     WOLVES,
     dispatcher,
 )
-from SaitamaRobot.modules.helper_funcs.chat_status import dev_plus
-from SaitamaRobot.modules.helper_funcs.extraction import (
+from LaraCroftRobot.modules.helper_funcs.chat_status import dev_plus
+from LaraCroftRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SaitamaRobot.modules.log_channel import gloggable
+from LaraCroftRobot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async

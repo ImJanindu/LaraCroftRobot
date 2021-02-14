@@ -1,5 +1,5 @@
 import requests
-from SaitamaRobot import CASH_API_KEY, dispatcher
+from LaraCroftRobot import CASH_API_KEY, dispatcher
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 

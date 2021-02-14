@@ -7,7 +7,7 @@ import urllib
 import emoji
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
-from SaitamaRobot.event import register
+from LaraCroftRobot.event import register
 from telethon.tl import functions, types
 
 COLORS = [

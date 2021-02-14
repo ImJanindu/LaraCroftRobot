@@ -1,20 +1,20 @@
 import html
 
-import SaitamaRobot.modules.sql.locks_sql as sql
+import LaraCroftRobot.modules.sql.locks_sql as sql
 from alphabet_detector import AlphabetDetector
-from SaitamaRobot import DRAGONS, LOGGER, dispatcher
-from SaitamaRobot.modules.connection import connected
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import send_message, typing_action
-from SaitamaRobot.modules.helper_funcs.chat_status import (
+from LaraCroftRobot import DRAGONS, LOGGER, dispatcher
+from LaraCroftRobot.modules.connection import connected
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
+from LaraCroftRobot.modules.helper_funcs.alternate import send_message, typing_action
+from LaraCroftRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_bot_admin,
     is_user_admin,
     user_admin,
     user_not_admin,
 )
-from SaitamaRobot.modules.log_channel import loggable
-from SaitamaRobot.modules.sql.approve_sql import is_approved
+from LaraCroftRobot.modules.log_channel import loggable
+from LaraCroftRobot.modules.sql.approve_sql import is_approved
 from telegram import (
     Chat,
     ChatPermissions,
