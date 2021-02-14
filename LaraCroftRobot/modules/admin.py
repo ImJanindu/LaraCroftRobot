@@ -1,5 +1,10 @@
 import html
 
+from telegram import ParseMode, Update
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
+from telegram.utils.helpers import mention_html
+
 from LaraCroftRobot import DRAGONS, dispatcher
 from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
 from LaraCroftRobot.modules.helper_funcs.alternate import send_message
@@ -16,10 +21,6 @@ from LaraCroftRobot.modules.helper_funcs.extraction import (
     extract_user_and_text,
 )
 from LaraCroftRobot.modules.log_channel import loggable
-from telegram import ParseMode, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
-from telegram.utils.helpers import mention_html
 
 
 @run_async

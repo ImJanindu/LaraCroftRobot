@@ -1,11 +1,12 @@
 import time
 
+from telethon import events
+
 from LaraCroftRobot import telethn
 from LaraCroftRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
-from telethon import events
 
 
 async def purge_messages(event):

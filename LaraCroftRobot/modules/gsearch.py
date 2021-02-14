@@ -1,8 +1,9 @@
 import html2text
 import requests
+from telethon.tl import functions, types
+
 from LaraCroftRobot import telethn
 from LaraCroftRobot.event import register
-from telethon.tl import functions, types
 
 
 async def is_register_admin(chat, user):

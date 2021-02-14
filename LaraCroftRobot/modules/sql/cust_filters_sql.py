@@ -1,8 +1,9 @@
 import threading
 
+from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
+
 from LaraCroftRobot.modules.helper_funcs.msg_types import Types
 from LaraCroftRobot.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 
 
 class CustomFilters(BASE):

@@ -1,5 +1,10 @@
 import html
 
+from telegram import ParseMode, Update
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
+from telegram.utils.helpers import mention_html
+
 from LaraCroftRobot import (
     DEMONS,
     DEV_USERS,
@@ -24,10 +29,6 @@ from LaraCroftRobot.modules.helper_funcs.chat_status import (
 from LaraCroftRobot.modules.helper_funcs.extraction import extract_user_and_text
 from LaraCroftRobot.modules.helper_funcs.string_handling import extract_time
 from LaraCroftRobot.modules.log_channel import gloggable, loggable
-from telegram import ParseMode, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
-from telegram.utils.helpers import mention_html
 
 
 @run_async

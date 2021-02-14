@@ -1,7 +1,8 @@
 from enum import IntEnum, unique
 
-from LaraCroftRobot.modules.helper_funcs.string_handling import button_markdown_parser
 from telegram import Message
+
+from LaraCroftRobot.modules.helper_funcs.string_handling import button_markdown_parser
 
 
 @unique

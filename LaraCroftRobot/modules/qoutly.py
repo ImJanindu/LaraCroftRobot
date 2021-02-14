@@ -7,8 +7,9 @@ import urllib
 import emoji
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
-from LaraCroftRobot.event import register
 from telethon.tl import functions, types
+
+from LaraCroftRobot.event import register
 
 COLORS = [
     "#F07975",

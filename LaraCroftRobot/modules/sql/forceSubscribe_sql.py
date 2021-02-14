@@ -14,8 +14,9 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-from LaraCroftRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Numeric, String
+
+from LaraCroftRobot.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):

@@ -1,9 +1,10 @@
 import threading
 
-from LaraCroftRobot import dispatcher
-from LaraCroftRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
+
+from LaraCroftRobot import dispatcher
+from LaraCroftRobot.modules.sql import BASE, SESSION
 
 
 class Federations(BASE):

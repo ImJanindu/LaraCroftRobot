@@ -3,6 +3,17 @@ import time
 from datetime import datetime
 from io import BytesIO
 
+from telegram import ParseMode, Update
+from telegram.error import BadRequest, TelegramError, Unauthorized
+from telegram.ext import (
+    CallbackContext,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+    run_async,
+)
+from telegram.utils.helpers import mention_html
+
 import LaraCroftRobot.modules.sql.global_bans_sql as sql
 from LaraCroftRobot import (
     DEMONS,
@@ -29,16 +40,6 @@ from LaraCroftRobot.modules.helper_funcs.extraction import (
 )
 from LaraCroftRobot.modules.helper_funcs.misc import send_to_list
 from LaraCroftRobot.modules.sql.users_sql import get_user_com_chats
-from telegram import ParseMode, Update
-from telegram.error import BadRequest, TelegramError, Unauthorized
-from telegram.ext import (
-    CallbackContext,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-    run_async,
-)
-from telegram.utils.helpers import mention_html
 
 GBAN_ENFORCE_GROUP = 6
 

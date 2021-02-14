@@ -4,6 +4,25 @@ import time
 from sys import argv
 from typing import Optional
 
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.error import (
+    BadRequest,
+    ChatMigrated,
+    NetworkError,
+    TelegramError,
+    TimedOut,
+    Unauthorized,
+)
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+)
+from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
+from telegram.utils.helpers import escape_markdown
+
 from LaraCroftRobot import (
     ALLOW_EXCL,
     CERT_PATH,
@@ -27,24 +46,6 @@ from LaraCroftRobot import (
 from LaraCroftRobot.modules import ALL_MODULES
 from LaraCroftRobot.modules.helper_funcs.chat_status import is_user_admin
 from LaraCroftRobot.modules.helper_funcs.misc import paginate_modules
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from telegram.error import (
-    BadRequest,
-    ChatMigrated,
-    NetworkError,
-    TelegramError,
-    TimedOut,
-    Unauthorized,
-)
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-)
-from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
-from telegram.utils.helpers import escape_markdown
 
 
 def get_readable_time(seconds: int) -> str:

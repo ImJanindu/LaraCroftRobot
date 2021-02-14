@@ -1,9 +1,10 @@
 import random
 
-from LaraCroftRobot import dispatcher
-from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
+
+from LaraCroftRobot import dispatcher
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
 
 reactions = [
     "( ͡° ͜ʖ ͡°)",

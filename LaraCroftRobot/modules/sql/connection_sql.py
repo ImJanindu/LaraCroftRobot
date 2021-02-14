@@ -2,8 +2,9 @@ import threading
 import time
 from typing import Union
 
-from LaraCroftRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
+
+from LaraCroftRobot.modules.sql import BASE, SESSION
 
 
 class ChatAccessConnectionSettings(BASE):

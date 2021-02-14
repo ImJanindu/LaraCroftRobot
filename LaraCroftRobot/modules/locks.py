@@ -1,7 +1,20 @@
 import html
 
-import LaraCroftRobot.modules.sql.locks_sql as sql
 from alphabet_detector import AlphabetDetector
+from telegram import (
+    Chat,
+    ChatPermissions,
+    Message,
+    MessageEntity,
+    ParseMode,
+    TelegramError,
+)
+from telegram.error import BadRequest
+from telegram.ext import CommandHandler, Filters, MessageHandler
+from telegram.ext.dispatcher import run_async
+from telegram.utils.helpers import mention_html
+
+import LaraCroftRobot.modules.sql.locks_sql as sql
 from LaraCroftRobot import DRAGONS, LOGGER, dispatcher
 from LaraCroftRobot.modules.connection import connected
 from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
@@ -15,18 +28,6 @@ from LaraCroftRobot.modules.helper_funcs.chat_status import (
 )
 from LaraCroftRobot.modules.log_channel import loggable
 from LaraCroftRobot.modules.sql.approve_sql import is_approved
-from telegram import (
-    Chat,
-    ChatPermissions,
-    Message,
-    MessageEntity,
-    ParseMode,
-    TelegramError,
-)
-from telegram.error import BadRequest
-from telegram.ext import CommandHandler, Filters, MessageHandler
-from telegram.ext.dispatcher import run_async
-from telegram.utils.helpers import mention_html
 
 ad = AlphabetDetector()
 

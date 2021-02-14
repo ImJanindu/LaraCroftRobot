@@ -4,6 +4,24 @@ import re
 import time
 from functools import partial
 
+from telegram import (
+    ChatPermissions,
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    ParseMode,
+    Update,
+)
+from telegram.error import BadRequest
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+    run_async,
+)
+from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
+
 import LaraCroftRobot.modules.sql.welcome_sql as sql
 from LaraCroftRobot import (
     DEMONS,
@@ -29,23 +47,6 @@ from LaraCroftRobot.modules.helper_funcs.string_handling import (
 )
 from LaraCroftRobot.modules.log_channel import loggable
 from LaraCroftRobot.modules.sql.global_bans_sql import is_user_gbanned
-from telegram import (
-    ChatPermissions,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    ParseMode,
-    Update,
-)
-from telegram.error import BadRequest
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-    run_async,
-)
-from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
 VALID_WELCOME_FORMATTERS = [
     "first",

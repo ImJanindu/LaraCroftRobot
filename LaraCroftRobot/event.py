@@ -1,5 +1,6 @@
-from LaraCroftRobot import telethn
 from telethon import events
+
+from LaraCroftRobot import telethn
 
 
 def register(**args):

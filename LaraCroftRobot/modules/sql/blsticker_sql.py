@@ -1,7 +1,8 @@
 import threading
 
-from LaraCroftRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Integer, String, UnicodeText, distinct, func
+
+from LaraCroftRobot.modules.sql import BASE, SESSION
 
 
 class StickersFilters(BASE):

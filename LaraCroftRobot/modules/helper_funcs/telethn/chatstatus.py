@@ -1,6 +1,7 @@
+from telethon.tl.types import ChannelParticipantsAdmins
+
 from LaraCroftRobot import DRAGONS
 from LaraCroftRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from telethon.tl.types import ChannelParticipantsAdmins
 
 
 async def user_is_ban_protected(user_id: int, message):

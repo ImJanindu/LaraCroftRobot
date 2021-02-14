@@ -1,8 +1,9 @@
-from LaraCroftRobot import dispatcher
-from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Bot, Update
 from telegram.ext import run_async
 from tswift import Song
+
+from LaraCroftRobot import dispatcher
+from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
