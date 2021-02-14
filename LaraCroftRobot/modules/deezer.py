@@ -2,10 +2,9 @@
 import os
 
 import requests
-from pyrogram.types import Message
+from pyrogram.types import Message, filters
 
 from LaraCroftRobot import pbot
-from pyrogram.types import filters
 
 
 @pbot.on_message(filters.command("deezer"))
