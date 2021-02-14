@@ -14,8 +14,8 @@ from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"
 kayo_btn = "Kayo 🏴‍☠️"
-prequel_btn = "⬅️ Prequel"
-sequel_btn = "Sequel ➡️"
+prequel_btn = "⬅️ Back"
+sequel_btn = "Next ➡️"
 close_btn = "Close ❌"
 
 
@@ -607,7 +607,7 @@ dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
 dispatcher.add_handler(KAYO_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
-__mod_name__ = "Anime"
+__mod_name__ = "Anime 👸"
 __command_list__ = [
     "anime",
     "manga",
