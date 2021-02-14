@@ -2,12 +2,11 @@ import os
 import time
 import zipfile
 
-from telethon import types
-from telethon.tl import functions
-
 from SaitamaRobot import TEMP_DOWNLOAD_DIRECTORY
 from SaitamaRobot import telethn as client
 from SaitamaRobot.event import register
+from telethon import types
+from telethon.tl import functions
 
 
 async def is_register_admin(chat, user):

@@ -1,12 +1,10 @@
-import asyncio
 from asyncio import sleep
 
+from SaitamaRobot import DEV_USERS, DRAGONS, OWNER_ID, TIGERS, telethn
 from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
-from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins
-
-from SaitamaRobot import telethn, OWNER_ID, DEV_USERS, DRAGONS, TIGERS
+from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
 
 # =================== CONSTANT ===================
 
@@ -48,7 +46,6 @@ async def is_administrator(user_id: int, message):
     return admin
 
 
-
 @telethn.on(events.NewMessage(pattern=f"^[!/]zombies ?(.*)"))
 async def zombies(event):
     """ For .zombies command, list all the zombies in a chat. """
@@ -76,11 +73,11 @@ async def zombies(event):
     creator = chat.creator
 
     # Well
-    
+
     if not await is_administrator(user_id=event.from_id, message=event):
         await event.respond("You're Not An Admin!")
         return
-    
+
     if not admin and not creator:
         await event.respond("I Am Not An Admin Here!")
         return
