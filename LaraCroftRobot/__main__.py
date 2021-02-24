@@ -77,10 +77,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! \n
-I am a group manager bot created by [my master](t.me/imjanindu) based on Project Lara written by [Janindu](https://visi.tk/imjanindu) \n
-Want to chat with me, send /addchat in a group and reply to my message to start chatting. \n
-You can find my list of available commands with /help.
+Hi {}, my name is {} 👸 \n
+I am a powerful group manager bot created by [Janindu 🇱🇰](t.me/imjanindu)\n
+Hit /help to find my list of available commands
 """
 
 HELP_STRINGS = """
@@ -97,13 +96,12 @@ Hey! My name is {}. I am a group management bot, here to help you get around and
 {}
 """.format(
     dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !\n",
+    "" if not ALLOW_EXCL else "All commands can either be used with / or !\n",
 )
 
 SAITAMA_IMG = "https://telegra.ph/file/5ddbf92813cb788bbc04e.jpg"
 
-DONATE_STRING = """Hey, glad to hear you want to donate!
-You can donate to the original writer of the base code of the bot - [Janindu](t.me/imjanindu)"""
+DONATE_STRING = """Heya, glad to hear you want to donate for developer. This bot runs on heroku so bot slow down some times and developer cannot add more modules due to heroku can't run them.\n\nBetter if my developer recieved a VPS to run the bot. Contact him and help him to continue this.\n\nDeveloper: [@ImJanindu](t.me/imjanindu)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -220,14 +218,10 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text=" ➕ Add Me ",
+                                text=" ➕ Add Lara To Your Group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
-                                ),
-                            ),
-                            InlineKeyboardButton(
-                                text=" 📌 My Updates ", url="https://t.me/Infinity_BOTs"
-                            ),
+                                ),                
                         ],
                         [
                             InlineKeyboardButton(
@@ -235,17 +229,15 @@ def start(update: Update, context: CallbackContext):
                                 url="https://t.me/TheLaraCroftRobot?start=help",
                             ),
                             InlineKeyboardButton(
-                                text=" 🐍 Developer ", url="https://t.me/ImJanindu"
+                                text=" 🇱🇰 Developer ", url="https://t.me/ImJanindu"
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text=" 👥 Support Group ", url="https://t.me/InfinityJE"
-                            )
-                        ],
-                        [
+                            ),                       
                             InlineKeyboardButton(
-                                text=" 🇱🇰 Support Channel ", url="https://t.me/InfJE"
+                                text=" 📌 Updates Channel ", url="https://t.me/Infinity_BOTs"
                             )
                         ],
                     ]
