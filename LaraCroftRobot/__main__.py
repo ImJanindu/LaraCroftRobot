@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
                                 text=" ➕ Add Lara To Your Group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
-                                )                
+                                ) )            
                         ],
                         [
                             InlineKeyboardButton(
