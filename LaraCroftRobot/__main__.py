@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
                                 text=" ➕ Add Lara To Your Group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
-                                ),                
+                                )                
                         ],
                         [
                             InlineKeyboardButton(
@@ -230,7 +230,7 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text=" 🇱🇰 Developer ", url="https://t.me/ImJanindu"
-                            ),
+                            )
                         ],
                         [
                             InlineKeyboardButton(
