@@ -207,7 +207,6 @@ def scam(imgspage, lim):
 __help__ = f"""
 *Commands:* 
 
-
 • `/reverse`*:* Does a *reverse image search* of the media which it was replied to.
 
 Reports bugs at @InfinityJE.
