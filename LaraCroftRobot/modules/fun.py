@@ -13,8 +13,6 @@ from LaraCroftRobot.modules.disable import DisableAbleCommandHandler
 from LaraCroftRobot.modules.helper_funcs.chat_status import is_user_admin
 from LaraCroftRobot.modules.helper_funcs.extraction import extract_user
 
-GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
-
 
 @run_async
 def runs(update: Update, context: CallbackContext):
@@ -29,28 +27,12 @@ def sanitize(update: Update, context: CallbackContext):
         if message.reply_to_message
         else message.from_user.first_name
     )
-    reply_animation = (
-        message.reply_to_message.reply_animation
+    reply_text = (
+        message.reply_to_message.reply_text
         if message.reply_to_message
-        else message.reply_animation
+        else message.reply_text
     )
-    reply_animation(GIF_ID, caption=f"*Sanitizes {name}*")
-
-
-@run_async
-def sanitize(update: Update, context: CallbackContext):
-    message = update.effective_message
-    name = (
-        message.reply_to_message.from_user.first_name
-        if message.reply_to_message
-        else message.from_user.first_name
-    )
-    reply_animation = (
-        message.reply_to_message.reply_animation
-        if message.reply_to_message
-        else message.reply_animation
-    )
-    reply_animation(random.choice(fun_strings.GIFS), caption=f"*Sanitizes {name}*")
+    reply_text(f"Lmao {name}, Keep 1 meter distance 😂")
 
 
 # plugin by t.me/RCage
